@@ -4,12 +4,13 @@ Reolink Camera API
 import json
 import logging
 from datetime import datetime, timedelta
-from typing import Dict, List, Optional, Tuple
-from . import typings
+from typing import List, Optional, Tuple
 
 import asyncio
-import aiohttp
 import urllib.parse as parse
+import aiohttp
+
+from . import typings
 
 MANUFACTURER = "Reolink"
 DEFAULT_STREAM = "main"
